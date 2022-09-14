@@ -1,8 +1,12 @@
 node{
-  stages{
-    stage('testing'){
-echo 'hello' 
-          }
-  }
+stages {
+        stage('Send Email') {
+            steps {
+            node ('master'){
+                echo 'Send Email'
+            }
+        }
+        }
+    }
 }
 
