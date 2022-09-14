@@ -1,6 +1,8 @@
 node{
-  stages('test'){
-echo 'hello'
+  stages{
+    stage('testing){
+echo 'hello' 
+          }
   }
 }
 
