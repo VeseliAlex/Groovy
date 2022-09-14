@@ -1,12 +1,10 @@
-node{
-stages {
-        stage('Send Email') {
+pipeline {
+    }
+    stages {
+        stage('Build') { 
             steps {
-            node ('master'){
-                echo 'Send Email'
+                echo 'Hello'
             }
-        }
         }
     }
 }
-
